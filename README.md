@@ -2,6 +2,7 @@
 
 Actives in efflux-compromised Escherichia coli were compared with wild-type strains to estimate efflux susceptibility of small molecules. An initial screen of over 300000 molecules was performed in an efflux-deficient (tolC mutant) strain. About 4500 hits (E.coli growth inhibitors) were identified, of which ca. 3, 780 were efflux-dependent (meaning they do not inhibit the WT). In addition, from the 4500 subset, two more refined datasets were created classifying 1061 molecules as pumped out and 404 as non-pumped.
 
+This model was incorporated on 2025-12-12.
 
 
 ## Information
