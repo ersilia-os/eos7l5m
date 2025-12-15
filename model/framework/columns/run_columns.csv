@@ -1,1 +1,3 @@
 name,type,direction,description
+pumped_proba,float,high,Probability of the molecule being pumped out of E.coli
+effluxed_proba,float,high,Probability of the molecule being effluxed out of E.coli
