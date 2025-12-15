@@ -7,4 +7,4 @@ Upon 5-fold crossvalidation on train test splits (80-20%) with balanced classes,
 | **Model**       | **Data** | **Frac Actives (%)** | **AUROC ± STDev** |
 |-----------------|----------|------------------|-------------------|
 | pumped   | 1475   | 72.33   |  0.887 ± 0.014 |
-| efflux   | 37640   | 10   |  0.70 ± 0.03 |
+| efflux   | 37640   | 10   |  0.88 ± 0.005 |

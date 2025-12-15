@@ -17,7 +17,6 @@ import json
 root = os.path.dirname(os.path.abspath(__file__))
 model_dir = os.path.abspath(os.path.join(root, "..", "..", "..","checkpoints"))
 
-
 def plot_yhat(ax,name):
     with open(os.path.join(model_dir, f"{name}", "report_crossval.json"), 'r') as f:
         results = json.load(f)
@@ -87,3 +86,16 @@ plot_yhat(ax, "efflux")
 
 plt.tight_layout()
 st.save_figure(os.path.join("../results", "performance_5fold_efflux.png"))
+
+
+with open(os.path.join(model_dir, "efflux", "report_crossval.json"), 'r') as f:
+    results = json.load(f)
+
+print(results.keys())
+roc_aucs = []
+for k,v in results.items():
+    roc_aucs += [v["roc_auc"]]
+
+mean_roc = np.mean(roc_aucs)
+st_dev = np.std(roc_aucs)
+print("MEAN AUC: ", mean_roc, st_dev)
