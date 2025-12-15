@@ -8,7 +8,7 @@ This model was incorporated on 2025-12-12.
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos7l5m`
-- **Slug:** `efflux-susceptibility-gram-negative`
+- **Slug:** `efflux-gram-negative`
 
 ### Domain
 - **Task:** `Annotation`
