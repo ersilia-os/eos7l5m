@@ -36,3 +36,6 @@ Publication: https://journals.asm.org/doi/10.1128/aac.01925-20
 Source Code: https://github.com/sfrench007/serf
 License: GPL-3.0-or-later
 Incorporation Date: '2025-12-12'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip
+Model Size: 47.0
+Environment Size: 1916.0
