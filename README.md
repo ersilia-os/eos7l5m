@@ -45,9 +45,9 @@ Below are the **Output Columns** of the model:
 - **Image Size (Mb):** `2024.63`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.62`
-- 100 inputs: `34.91`
-- 10000 inputs: `899.02`
+- 10 inputs: `33.22`
+- 100 inputs: `33.26`
+- 10000 inputs: `881.83`
 
 ### References
 - **Source Code**: [https://github.com/sfrench007/serf](https://github.com/sfrench007/serf)
