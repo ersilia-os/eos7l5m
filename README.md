@@ -2,8 +2,7 @@
 
 Actives in efflux-compromised Escherichia coli were compared with wild-type strains to estimate efflux susceptibility of small molecules. An initial screen of over 300000 molecules was performed in an efflux-deficient (tolC mutant) strain. About 4500 hits (E.coli growth inhibitors) were identified, of which ca. 3, 780 were efflux-dependent (meaning they do not inhibit the WT). In addition, from the 4500 subset, two more refined datasets were created classifying 1061 molecules as pumped out and 404 as non-pumped.
 
-This model was incorporated on 2025-12-12.
-
+This model was incorporated on 2025-12-12.Last packaged on 2025-12-18.
 
 ## Information
 ### Identifiers
@@ -36,12 +35,19 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Internal`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7l5m](https://hub.docker.com/r/ersiliaos/eos7l5m)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `47`
 - **Environment Size (Mb):** `1916`
+- **Image Size (Mb):** `2024.63`
 
+**Computational Performance (seconds):**
+- 10 inputs: `34.62`
+- 100 inputs: `34.91`
+- 10000 inputs: `899.02`
 
 ### References
 - **Source Code**: [https://github.com/sfrench007/serf](https://github.com/sfrench007/serf)
