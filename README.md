@@ -51,7 +51,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/sfrench007/serf](https://github.com/sfrench007/serf)
-- **Publication**: [https://journals.asm.org/doi/10.1128/aac.01925-20](https://journals.asm.org/doi/10.1128/aac.01925-20)
+- **Publication**: [https://doi.org/10.1128/AAC.01925-20](https://doi.org/10.1128/AAC.01925-20)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
