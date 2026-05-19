@@ -25,11 +25,12 @@ Output Consistency: Fixed
 Interpretation: Probability of the compound being effluxed out of E.coli cells.
 Tag:
   - Antimicrobial activity
+  - Grm-negative bacteria
 Biomedical Area:
   - Antimicrobial resistance
+  - Diarrheal diseases
 Target Organism:
   - Escherichia coli
-  - Gram-negative bacteria
 Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://doi.org/10.1128/AAC.01925-20
