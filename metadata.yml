@@ -1,6 +1,6 @@
 Identifier: eos7l5m
 Slug: efflux-gram-negative
-Status: In maintenance
+Status: Ready
 Title: Efflux susceptibility in gram-negative bacteria
 Description: Actives in efflux-compromised Escherichia coli were compared with 
   wild-type strains to estimate efflux susceptibility of small molecules. An 
@@ -38,7 +38,7 @@ Source Code: https://github.com/sfrench007/serf
 License: GPL-3.0-or-later
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-12'
-Last Packaging Date: '2025-12-18'
+Last Packaging Date: '2026-07-06'
 Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos7l5m
@@ -47,9 +47,9 @@ Docker Architecture:
   - ARM64
 Model Size: 47.0
 Environment Size: 1924.0
-Image Size: 2024.63
-Computational Performance 1: 33.22
-Computational Performance 2: 24.08
-Computational Performance 3: 33.26
-Computational Performance 4: 182.78
-Computational Performance 5: 881.83
+Image Size: 2043.59
+Computational Performance 1: 41.25
+Computational Performance 2: 32.34
+Computational Performance 3: 38.59
+Computational Performance 4: 196.23
+Computational Performance 5: 882.16
