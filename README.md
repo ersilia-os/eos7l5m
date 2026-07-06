@@ -2,7 +2,7 @@
 
 Actives in efflux-compromised Escherichia coli were compared with wild-type strains to estimate efflux susceptibility of small molecules. An initial screen of over 300000 molecules was performed in an efflux-deficient (tolC mutant) strain. About 4500 hits (E.coli growth inhibitors) were identified, of which ca. 3, 780 were efflux-dependent (meaning they do not inhibit the WT). In addition, from the 4500 subset, two more refined datasets were created classifying 1061 molecules as pumped out and 404 as non-pumped.
 
-This model was incorporated on 2025-12-12.Last packaged on 2025-12-18.
+This model was incorporated on 2025-12-12.Last packaged on 2026-07-06.
 
 ## Information
 ### Identifiers
@@ -42,12 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `47`
 - **Environment Size (Mb):** `1924`
-- **Image Size (Mb):** `2024.63`
+- **Image Size (Mb):** `2043.59`
 
 **Computational Performance (seconds):**
-- 10 inputs: `33.22`
-- 100 inputs: `33.26`
-- 10000 inputs: `881.83`
+- 10 inputs: `41.25`
+- 100 inputs: `38.59`
+- 10000 inputs: `882.16`
 
 ### References
 - **Source Code**: [https://github.com/sfrench007/serf](https://github.com/sfrench007/serf)
