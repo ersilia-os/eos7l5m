@@ -12,9 +12,9 @@ This model was incorporated on 2025-12-12.Last packaged on 2025-12-18.
 ### Domain
 - **Task:** `Annotation`
 - **Subtask:** `Activity prediction`
-- **Biomedical Area:** `Antimicrobial resistance`
-- **Target Organism:** `Escherichia coli`, `Gram-negative bacteria`
-- **Tags:** `Antimicrobial activity`
+- **Biomedical Area:** `Antimicrobial resistance`, `Diarrheal diseases`
+- **Target Organism:** `Escherichia coli`
+- **Tags:** `Antimicrobial activity`, `Gram-negative bacteria`
 
 ### Input
 - **Input:** `Compound`
