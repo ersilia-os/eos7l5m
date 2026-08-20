@@ -2,7 +2,13 @@ Identifier: eos7l5m
 Slug: efflux-gram-negative
 Status: Ready
 Title: Efflux susceptibility in gram-negative bacteria
-Description: Reports both whether a compound inhibits Escherichia coli and whether efflux pumps expel it, two properties that together determine if antibacterial activity survives in an intact cell. El Zahed and colleagues screened small-molecule inhibitors against wild-type and efflux-deficient strains, letting intrinsic potency be separated from susceptibility to export, and related the difference to physicochemical character. A compound can therefore be genuinely active yet ineffective because it is pumped out.
+Description: Actives in efflux-compromised Escherichia coli were compared with 
+  wild-type strains to estimate efflux susceptibility of small molecules. An 
+  initial screen of over 300000 molecules was performed in an efflux-deficient 
+  (tolC mutant) strain. About 4500 hits (E.coli growth inhibitors) were 
+  identified, of which ca. 3, 780 were efflux-dependent (meaning they do not 
+  inhibit the WT). In addition, from the 4500 subset, two more refined datasets 
+  were created classifying 1061 molecules as pumped out and 404 as non-pumped.
 Deployment:
   - Local
 Source: Local
@@ -16,7 +22,7 @@ Output:
   - Score
 Output Dimension: 2
 Output Consistency: Fixed
-Interpretation: Probability of Escherichia coli growth inhibition and probability of susceptibility to efflux.
+Interpretation: Probability of the compound being effluxed out of E.coli cells.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
