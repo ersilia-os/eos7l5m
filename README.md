@@ -1,6 +1,6 @@
 # Efflux susceptibility in gram-negative bacteria
 
-Actives in efflux-compromised Escherichia coli were compared with wild-type strains to estimate efflux susceptibility of small molecules. An initial screen of over 300000 molecules was performed in an efflux-deficient (tolC mutant) strain. About 4500 hits (E.coli growth inhibitors) were identified, of which ca. 3, 780 were efflux-dependent (meaning they do not inhibit the WT). In addition, from the 4500 subset, two more refined datasets were created classifying 1061 molecules as pumped out and 404 as non-pumped.
+Reports both whether a compound inhibits Escherichia coli and whether efflux pumps expel it, two properties that together determine if antibacterial activity survives in an intact cell. El Zahed and colleagues screened small-molecule inhibitors against wild-type and efflux-deficient strains, letting intrinsic potency be separated from susceptibility to export, and related the difference to physicochemical character. A compound can therefore be genuinely active yet ineffective because it is pumped out.
 
 This model was incorporated on 2025-12-12.Last packaged on 2026-07-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-12-12.Last packaged on 2026-07-06.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of the compound being effluxed out of E.coli cells.
+- **Interpretation:** Probability of Escherichia coli growth inhibition and probability of susceptibility to efflux.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -53,11 +53,11 @@ Below are the **Output Columns** of the model:
 - **Source Code**: [https://github.com/sfrench007/serf](https://github.com/sfrench007/serf)
 - **Publication**: [https://doi.org/10.1128/AAC.01925-20](https://doi.org/10.1128/AAC.01925-20)
 - **Publication Type:** `Peer reviewed`
-- **Publication Year:** `2025`
+- **Publication Year:** `2021`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
 ### License
-This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [GPL-3.0-or-later](LICENSE) license.
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [BSD-3-Clause](LICENSE) license.
 
 **Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 

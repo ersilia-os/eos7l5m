@@ -2,13 +2,7 @@ Identifier: eos7l5m
 Slug: efflux-gram-negative
 Status: Ready
 Title: Efflux susceptibility in gram-negative bacteria
-Description: Actives in efflux-compromised Escherichia coli were compared with 
-  wild-type strains to estimate efflux susceptibility of small molecules. An 
-  initial screen of over 300000 molecules was performed in an efflux-deficient 
-  (tolC mutant) strain. About 4500 hits (E.coli growth inhibitors) were 
-  identified, of which ca. 3, 780 were efflux-dependent (meaning they do not 
-  inhibit the WT). In addition, from the 4500 subset, two more refined datasets 
-  were created classifying 1061 molecules as pumped out and 404 as non-pumped.
+Description: Reports both whether a compound inhibits Escherichia coli and whether efflux pumps expel it, two properties that together determine if antibacterial activity survives in an intact cell. El Zahed and colleagues screened small-molecule inhibitors against wild-type and efflux-deficient strains, letting intrinsic potency be separated from susceptibility to export, and related the difference to physicochemical character. A compound can therefore be genuinely active yet ineffective because it is pumped out.
 Deployment:
   - Local
 Source: Local
@@ -22,7 +16,7 @@ Output:
   - Score
 Output Dimension: 2
 Output Consistency: Fixed
-Interpretation: Probability of the compound being effluxed out of E.coli cells.
+Interpretation: Probability of Escherichia coli growth inhibition and probability of susceptibility to efflux.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
@@ -32,10 +26,10 @@ Biomedical Area:
 Target Organism:
   - Escherichia coli
 Publication Type: Peer reviewed
-Publication Year: 2025
+Publication Year: 2021
 Publication: https://doi.org/10.1128/AAC.01925-20
 Source Code: https://github.com/sfrench007/serf
-License: GPL-3.0-or-later
+License: BSD-3-Clause
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-12'
 Last Packaging Date: '2026-07-06'
@@ -53,4 +47,3 @@ Computational Performance 2: 32.34
 Computational Performance 3: 38.59
 Computational Performance 4: 196.23
 Computational Performance 5: 882.16
-Status: Ready
