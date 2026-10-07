@@ -1,6 +1,6 @@
 # Efflux susceptibility in gram-negative bacteria
 
-Reports both whether a compound inhibits Escherichia coli and whether efflux pumps expel it, two properties that together determine if antibacterial activity survives in an intact cell. El Zahed and colleagues screened small-molecule inhibitors against wild-type and efflux-deficient strains, letting intrinsic potency be separated from susceptibility to export, and related the difference to physicochemical character. A compound can therefore be genuinely active yet ineffective because it is pumped out.
+Flags small molecules likely to be expelled by Escherichia coli efflux pumps, the barrier that most often strips Gram-negative antibacterials of whole-cell activity. El Zahed and colleagues screened some 314,000 compounds against an efflux-deficient tolC mutant, recovered about 4,500 growth inhibitors, 84% of which lost potency in the wild type, and separated roughly 1,070 pumped from 410 non-pumped actives. Ersilia retrained classifiers on those sets with LazyQSAR instead of serving the published SERF random forest.
 
 This model was incorporated on 2025-12-12.Last packaged on 2026-07-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-12-12.Last packaged on 2026-07-06.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of Escherichia coli growth inhibition and probability of susceptibility to efflux.
+- **Interpretation:** Two probabilities that Escherichia coli efflux pumps export the compound, trained on actives from a tolC-mutant screen.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
