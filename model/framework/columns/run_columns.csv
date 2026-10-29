@@ -1,3 +1,3 @@
 name,type,direction,description
-pumped_proba,float,high,Probability of the molecule being pumped out of E.coli
-effluxed_proba,float,high,Probability of the molecule being effluxed out of E.coli
+pumped_rank,float,high,Rank score of how likely Escherichia coli efflux pumps are to expel the compound. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.
+effluxed_rank,float,high,Rank score of how likely the compound is to inhibit Escherichia coli growth only when TolC-dependent efflux is disabled. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.

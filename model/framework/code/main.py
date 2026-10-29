@@ -1,38 +1,30 @@
 import os
-import csv
 import sys
-from lazyqsar.qsar import LazyBinaryQSAR
 
-# parse arguments
+from ersilia_pack_utils.core import read_smiles, write_out
+from lazyqsar.api.classifier_predict import predict
+
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-# current file directory
 root = os.path.dirname(os.path.abspath(__file__))
+checkpoints = os.path.abspath(os.path.join(root, "..", "..", "checkpoints"))
 
-MODELPATH = os.path.join(root, "..", "..", "checkpoints")
+MODELS = {
+    "pumped_rank": "pump",
+    "effluxed_rank": "efflux",
+}
 
-models = ["pump", "efflux"]
+_, smiles_list = read_smiles(input_file)
 
-# read SMILES from .csv file, assuming one column with header
-with open(input_file, "r") as f:
-    reader = csv.reader(f)
-    next(reader)  # skip header
-    smiles_list = [r[0] for r in reader]
+outputs, header = predict(
+    {name: os.path.join(checkpoints, folder) for name, folder in MODELS.items()},
+    smiles=smiles_list,
+    predict_type="rank",
+)
 
-# run model
-y_preds = {}
-for m in models:
-    model_folder = os.path.join(MODELPATH, f"{m}")
-    model = LazyBinaryQSAR.load(f"{model_folder}")
-    y_pred = model.predict_proba(smiles_list=smiles_list)[:, 1]
-    y_preds[m]=y_pred
+# Ersilia reports missing values as empty cells; csv.writer would otherwise
+# render an unparseable SMILES as the string "nan".
+outputs = [["" if v is None or v != v else v for v in row] for row in outputs]
 
-header = list(y_preds.keys())
-
-# write output in a .csv file
-with open(output_file, "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["pumped_proba", "effluxed_proba"]) 
-    for o1, o2 in zip(*(y_preds[m].tolist() for m in header)):
-        writer.writerow([o1, o2])
+write_out(outputs, header, output_file)

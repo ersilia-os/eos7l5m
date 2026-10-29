@@ -23,13 +23,13 @@ This model was incorporated on 2025-12-12.Last packaged on 2026-07-06.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Two probabilities that Escherichia coli efflux pumps export the compound, trained on actives from a tolC-mutant screen.
+- **Interpretation:** Two rank scores calibrated against the Ersilia reference library of 50K compounds, where 0.65 beats 99% of it. The first is how likely Escherichia coli is to pump the compound out; the second how likely it is to inhibit growth only when efflux is disabled. Trained on a tolC-mutant screen.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| pumped_proba | float | high | Probability of the molecule being pumped out of E.coli |
-| effluxed_proba | float | high | Probability of the molecule being effluxed out of E.coli |
+| pumped_rank | float | high | Rank score of how likely Escherichia coli efflux pumps are to expel the compound. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| effluxed_rank | float | high | Rank score of how likely the compound is to inhibit Escherichia coli growth only when TolC-dependent efflux is disabled. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
