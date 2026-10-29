@@ -2,13 +2,14 @@ Identifier: eos7l5m
 Slug: efflux-gram-negative
 Status: Ready
 Title: Efflux susceptibility in gram-negative bacteria
-Description: Flags small molecules likely to be expelled by Escherichia coli efflux
-  pumps, the barrier that most often strips Gram-negative antibacterials of whole-cell
-  activity. El Zahed and colleagues screened some 314,000 compounds against an efflux-deficient
-  tolC mutant, recovered about 4,500 growth inhibitors, 84% of which lost potency
-  in the wild type, and separated roughly 1,070 pumped from 410 non-pumped actives.
-  Ersilia retrained classifiers on those sets with LazyQSAR instead of serving the
-  published SERF random forest.
+Description: Flags small molecules likely to be expelled by Escherichia coli 
+  efflux pumps, the barrier that most often strips Gram-negative antibacterials 
+  of whole-cell activity. El Zahed and colleagues screened some 314,000 
+  compounds against an efflux-deficient tolC mutant, recovered about 4,500 
+  growth inhibitors, 84% of which lost potency in the wild type, and separated 
+  roughly 1,070 pumped from 410 non-pumped actives. Ersilia retrained 
+  classifiers on those sets with LazyQSAR instead of serving the published SERF 
+  random forest.
 Deployment:
   - Local
 Source: Local
@@ -23,9 +24,9 @@ Output:
 Output Dimension: 2
 Output Consistency: Fixed
 Interpretation: Two rank scores calibrated against the Ersilia reference library
-  of 50K compounds, where 0.65 beats 99% of it. The first is how likely Escherichia
-  coli is to pump the compound out; the second how likely it is to inhibit growth
-  only when efflux is disabled. Trained on a tolC-mutant screen.
+  of 50K compounds, where 0.65 beats 99% of it. The first is how likely 
+  Escherichia coli is to pump the compound out; the second how likely it is to 
+  inhibit growth only when efflux is disabled. Trained on a tolC-mutant screen.
 Tag:
   - Antimicrobial activity
   - Gram-negative bacteria
