@@ -43,7 +43,7 @@ License: BSD-3-Clause
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-12'
 Last Packaging Date: '2026-10-29'
-Release: v1.0.0
+Release: v2.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos7l5m
 Docker Architecture:
