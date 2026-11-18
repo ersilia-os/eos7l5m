@@ -2,7 +2,8 @@
 
 Flags small molecules likely to be expelled by Escherichia coli efflux pumps, the barrier that most often strips Gram-negative antibacterials of whole-cell activity. El Zahed and colleagues screened some 314,000 compounds against an efflux-deficient tolC mutant, recovered about 4,500 growth inhibitors, 84% of which lost potency in the wild type, and separated roughly 1,070 pumped from 410 non-pumped actives. Ersilia retrained classifiers on those sets with LazyQSAR instead of serving the published SERF random forest.
 
-This model was incorporated on 2025-12-12.Last packaged on 2026-10-29.
+This model was incorporated on 2025-12-12.
+Last packaged on 2026-10-29.
 
 ## Information
 ### Identifiers
@@ -38,6 +39,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7l5m](https://hub.docker.com/r/ersiliaos/eos7l5m)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos7l5m_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos7l5m_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `89`
