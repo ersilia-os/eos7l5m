@@ -42,7 +42,7 @@ Source Code: https://github.com/sfrench007/serf
 License: BSD-3-Clause
 Contributor: miquelduranfrigola
 Incorporation Date: '2025-12-12'
-Last Packaging Date: '2026-10-29'
+Last Packaging Date: '2026-11-23'
 Release: v2.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7l5m.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos7l5m
@@ -52,9 +52,9 @@ Docker Architecture:
 Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos7l5m_v2.sif
 Model Size: 105.0
 Environment Size: 6954.0
-Image Size: 7621.45
-Computational Performance 1: 41.46
-Computational Performance 2: 31.58
-Computational Performance 3: 35.29
-Computational Performance 4: 193.25
-Computational Performance 5: 957.88
+Image Size: 3300.51
+Computational Performance 1: 34.31
+Computational Performance 2: 24.53
+Computational Performance 3: 30.08
+Computational Performance 4: 84.07
+Computational Performance 5: 323.32
