@@ -3,7 +3,7 @@
 Flags small molecules likely to be expelled by Escherichia coli efflux pumps, the barrier that most often strips Gram-negative antibacterials of whole-cell activity. El Zahed and colleagues screened some 314,000 compounds against an efflux-deficient tolC mutant and separated roughly 1,070 pumped from 410 non-pumped actives. Ersilia trained two LazyQSAR classifiers, pumped against non-pumped actives (1,465 compounds) and tolC-only inhibitors against a random sample of inactives (37,470 compounds, 10% active), both with a five-fold out-of-fold AUROC of 0.92.
 
 This model was incorporated on 2025-12-12.
-Last packaged on 2026-10-29.
+Last packaged on 2026-11-23.
 
 ## Information
 ### Identifiers
@@ -44,12 +44,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `105`
 - **Environment Size (Mb):** `6954`
-- **Image Size (Mb):** `7621.45`
+- **Image Size (Mb):** `3300.51`
 
 **Computational Performance (seconds):**
-- 10 inputs: `41.46`
-- 100 inputs: `35.29`
-- 10000 inputs: `957.88`
+- 10 inputs: `34.31`
+- 100 inputs: `30.08`
+- 10000 inputs: `323.32`
 
 ### References
 - **Source Code**: [https://github.com/sfrench007/serf](https://github.com/sfrench007/serf)
