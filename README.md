@@ -1,6 +1,6 @@
 # Efflux susceptibility in gram-negative bacteria
 
-Flags small molecules likely to be expelled by Escherichia coli efflux pumps, the barrier that most often strips Gram-negative antibacterials of whole-cell activity. El Zahed and colleagues screened some 314,000 compounds against an efflux-deficient tolC mutant, recovered about 4,500 growth inhibitors, 84% of which lost potency in the wild type, and separated roughly 1,070 pumped from 410 non-pumped actives. Ersilia retrained classifiers on those sets with LazyQSAR instead of serving the published SERF random forest.
+Flags small molecules likely to be expelled by Escherichia coli efflux pumps, the barrier that most often strips Gram-negative antibacterials of whole-cell activity. El Zahed and colleagues screened some 314,000 compounds against an efflux-deficient tolC mutant and separated roughly 1,070 pumped from 410 non-pumped actives. Ersilia trained two LazyQSAR classifiers, pumped against non-pumped actives (1,465 compounds) and tolC-only inhibitors against a random sample of inactives (37,470 compounds, 10% active), both with a five-fold out-of-fold AUROC of 0.92.
 
 This model was incorporated on 2025-12-12.
 Last packaged on 2026-10-29.
